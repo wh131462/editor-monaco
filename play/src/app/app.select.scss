@@ -1,0 +1,28 @@
+.demo-list {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    .demo-item {
+        cursor: pointer;
+        width: 100px;
+        height: 150px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        background-color: rgba(95, 111, 255, 0.08);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-family: 'Songti TC', sans-serif;
+        font-weight: 400;
+        word-break: break-all;
+        user-select: none;
+        &:hover {
+            background-color: #4857e2;
+            color: #ffffff;
+        }
+    }
+}

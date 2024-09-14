@@ -1,0 +1,14 @@
+{
+  "version": "1.0.4",
+  "name": "editor-monaco",
+  "prefix": "ui",
+  "projects": {
+    "ui": {
+      "type": "component"
+    },
+    "play": {
+      "type": "demo"
+    }
+  },
+  "packageManager": "pnpm"
+}
