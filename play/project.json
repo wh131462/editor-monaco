@@ -15,7 +15,12 @@
         "main": "play/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "play/tsconfig.app.json",
-        "assets": ["play/src/favicon.ico", "play/src/assets"],
+        "assets": ["play/src/favicon.ico", "play/src/assets",
+          {
+          "glob": "**/*",
+          "input": "node_modules/monaco-editor",
+          "output": "assets/monaco-editor"
+        }],
         "styles": ["play/src/styles.css"],
         "scripts": []
       },
