@@ -13,7 +13,6 @@ import { Subject } from 'rxjs';
   styleUrls: ['./editor.component.scss']
 })
 export class EditorComponent {
-  // editor: monaco.editor.IStandaloneCodeEditor;
   @Input() theme = 'vs-dark';
   @Input() language = 'javascript';
 
@@ -57,31 +56,6 @@ export class EditorComponent {
         }
       });
     });
-  }
-
-  ngOnInit() {
-    this.initEditor();
-  }
-
-  initEditor() {
-    // // 环境不对
-    // this.editor = monaco.editor.create(document.getElementById('editor-container'), {
-    //     value: `${template}`,
-    //     language: this.language,
-    //     theme: this.theme,
-    //     automaticLayout: true,
-    //     minimap: {
-    //         enabled: false
-    //     }
-    // });
-    // const renderInstance = this.injector.get(RendererComponent);
-    // const declare = this.getDeclare(this.getClassStructure(renderInstance));
-    // // 有没有可能在编译的时候 获取
-    // monaco.languages.typescript.javascriptDefaults.addExtraLib(declare + formEditorTmp, 'filename/formEditor.d.ts');
-    //
-    // this.editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, () => {
-    //     this.editor.trigger('keyboard', 'editor.action.triggerSuggest', {});
-    // });
   }
 
   getClassStructure(instance: any): Declare {
