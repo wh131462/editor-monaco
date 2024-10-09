@@ -45,6 +45,9 @@ importers:
         specifier: ~0.13.0
         version: 0.13.3
     devDependencies:
+      '@angular-builders/custom-webpack':
+        specifier: '16'
+        version: 16.0.1(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)))(typescript@5.1.6))(@swc/core@1.7.26)(@types/node@16.11.7)(chokidar@3.6.0)(html-webpack-plugin@5.6.0(webpack@5.94.0(@swc/core@1.7.26)(esbuild@0.19.12)))(jest-environment-jsdom@29.7.0)(jest@29.7.0(@types/node@16.11.7)(ts-node@10.9.1(@swc/core@1.7.26)(@types/node@16.11.7)(typescript@5.1.6)))(ng-packagr@16.2.3(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)))(typescript@5.1.6))(tslib@2.7.0)(typescript@5.1.6))(stylus@0.59.0)(typescript@5.1.6)
       '@angular-devkit/build-angular':
         specifier: ~16.2.0
         version: 16.2.15(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)))(typescript@5.1.6))(@swc/core@1.7.26)(@types/node@16.11.7)(html-webpack-plugin@5.6.0(webpack@5.94.0(@swc/core@1.7.26)(esbuild@0.19.12)))(jest-environment-jsdom@29.7.0)(jest@29.7.0(@types/node@16.11.7)(ts-node@10.9.1(@swc/core@1.7.26)(@types/node@16.11.7)(typescript@5.1.6)))(ng-packagr@16.2.3(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)))(typescript@5.1.6))(tslib@2.7.0)(typescript@5.1.6))(stylus@0.59.0)(typescript@5.1.6)
@@ -150,6 +153,12 @@ importers:
       jsonc-eslint-parser:
         specifier: ^2.1.0
         version: 2.4.0
+      mini-css-extract-plugin:
+        specifier: ^2.9.1
+        version: 2.9.1(webpack@5.94.0(@swc/core@1.7.26)(esbuild@0.19.12))
+      monaco-editor-webpack-plugin:
+        specifier: ^7.1.0
+        version: 7.1.0(monaco-editor@0.51.0)(webpack@5.94.0(@swc/core@1.7.26)(esbuild@0.19.12))
       ng-packagr:
         specifier: ~16.2.0
         version: 16.2.3(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)))(typescript@5.1.6))(tslib@2.7.0)(typescript@5.1.6)
@@ -202,6 +211,12 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@angular-builders/custom-webpack@16.0.1':
+    resolution: {integrity: sha512-C6INC8UOYDcp8LJwNhE0m66yp+nZX50JdgGI8oRn7fqw3gO58qhDgXrR/8BCrSeC8eOx8WxSuvBJ6u+9dozhyw==}
+    engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
+    peerDependencies:
+      '@angular/compiler-cli': ^16.0.0
 
   '@angular-devkit/architect@0.1602.15':
     resolution: {integrity: sha512-+yPlUG5c8l7Z/A6dyeV7NQjj4WDWnWWQt+8eW/KInwVwoYiM32ntTJ0M4uU/aDdHuwKQnMLly28AcSWPWKYf2Q==}
@@ -5891,6 +5906,12 @@ packages:
     peerDependencies:
       webpack: ^5.0.0
 
+  mini-css-extract-plugin@2.9.1:
+    resolution: {integrity: sha512-+Vyi+GCCOHnrJ2VPS+6aPoXN2k2jgUzDRhTFLjjTBn23qyXJXkjUWQgTL+mXpF5/A8ixLdCc6kWsoeOjKGejKQ==}
+    engines: {node: '>= 12.13.0'}
+    peerDependencies:
+      webpack: ^5.0.0
+
   minimalistic-assert@1.0.1:
     resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
 
@@ -5980,6 +6001,12 @@ packages:
 
   moment@2.30.1:
     resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
+
+  monaco-editor-webpack-plugin@7.1.0:
+    resolution: {integrity: sha512-ZjnGINHN963JQkFqjjcBtn1XBtUATDZBMgNQhDQwd78w2ukRhFXAPNgWuacaQiDZsUr4h1rWv5Mv6eriKuOSzA==}
+    peerDependencies:
+      monaco-editor: '>= 0.31.0'
+      webpack: ^4.5.0 || 5.x
 
   monaco-editor@0.51.0:
     resolution: {integrity: sha512-xaGwVV1fq343cM7aOYB6lVE4Ugf0UyimdD/x5PWcWBMKENwectaEu77FAN7c5sFiyumqeJdX1RPTh1ocioyDjw==}
@@ -8505,6 +8532,46 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
+
+  '@angular-builders/custom-webpack@16.0.1(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)))(typescript@5.1.6))(@swc/core@1.7.26)(@types/node@16.11.7)(chokidar@3.6.0)(html-webpack-plugin@5.6.0(webpack@5.94.0(@swc/core@1.7.26)(esbuild@0.19.12)))(jest-environment-jsdom@29.7.0)(jest@29.7.0(@types/node@16.11.7)(ts-node@10.9.1(@swc/core@1.7.26)(@types/node@16.11.7)(typescript@5.1.6)))(ng-packagr@16.2.3(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)))(typescript@5.1.6))(tslib@2.7.0)(typescript@5.1.6))(stylus@0.59.0)(typescript@5.1.6)':
+    dependencies:
+      '@angular-devkit/architect': 0.1602.15(chokidar@3.6.0)
+      '@angular-devkit/build-angular': 16.2.15(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)))(typescript@5.1.6))(@swc/core@1.7.26)(@types/node@16.11.7)(html-webpack-plugin@5.6.0(webpack@5.94.0(@swc/core@1.7.26)(esbuild@0.19.12)))(jest-environment-jsdom@29.7.0)(jest@29.7.0(@types/node@16.11.7)(ts-node@10.9.1(@swc/core@1.7.26)(@types/node@16.11.7)(typescript@5.1.6)))(ng-packagr@16.2.3(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)))(typescript@5.1.6))(tslib@2.7.0)(typescript@5.1.6))(stylus@0.59.0)(typescript@5.1.6)
+      '@angular-devkit/core': 16.2.15(chokidar@3.6.0)
+      '@angular/compiler-cli': 16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)))(typescript@5.1.6)
+      lodash: 4.17.21
+      ts-node: 10.9.1(@swc/core@1.7.26)(@types/node@16.11.7)(typescript@5.1.6)
+      tsconfig-paths: 4.2.0
+      webpack-merge: 5.10.0
+    transitivePeerDependencies:
+      - '@angular/localize'
+      - '@angular/platform-server'
+      - '@angular/service-worker'
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - bufferutil
+      - canvas
+      - chokidar
+      - debug
+      - fibers
+      - html-webpack-plugin
+      - jest
+      - jest-environment-jsdom
+      - karma
+      - lightningcss
+      - ng-packagr
+      - node-sass
+      - protractor
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - tailwindcss
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - webpack-cli
 
   '@angular-devkit/architect@0.1602.15(chokidar@3.5.3)':
     dependencies:
@@ -16831,6 +16898,12 @@ snapshots:
       schema-utils: 4.2.0
       webpack: 5.94.0(@swc/core@1.7.26)(esbuild@0.18.17)
 
+  mini-css-extract-plugin@2.9.1(webpack@5.94.0(@swc/core@1.7.26)(esbuild@0.19.12)):
+    dependencies:
+      schema-utils: 4.2.0
+      tapable: 2.2.1
+      webpack: 5.94.0(@swc/core@1.7.26)(esbuild@0.19.12)
+
   minimalistic-assert@1.0.1: {}
 
   minimatch@3.0.5:
@@ -16923,6 +16996,12 @@ snapshots:
       ufo: 1.5.4
 
   moment@2.30.1: {}
+
+  monaco-editor-webpack-plugin@7.1.0(monaco-editor@0.51.0)(webpack@5.94.0(@swc/core@1.7.26)(esbuild@0.19.12)):
+    dependencies:
+      loader-utils: 2.0.4
+      monaco-editor: 0.51.0
+      webpack: 5.94.0(@swc/core@1.7.26)(esbuild@0.19.12)
 
   monaco-editor@0.51.0: {}
 

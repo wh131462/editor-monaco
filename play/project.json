@@ -7,9 +7,12 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@angular-builders/custom-webpack:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "customWebpackConfig": {
+          "path": "play/webpack.config.js"
+        },
         "outputPath": "dist/play",
         "index": "play/src/index.html",
         "main": "play/src/main.ts",
